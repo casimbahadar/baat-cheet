@@ -1,0 +1,113 @@
+// Level 4, Upper intermediate: joining ideas. If and then, who and which, compound
+// verbs, getting things done, reported speech, and family occasions.
+export const LEVEL_4 = {
+  id: 'L4', name: 'Level 4: Upper intermediate', goal: 'Join ideas: if and then, who and which, getting things done, and telling what others said.',
+  units: [
+    { id: 'l4-if', name: 'If and then',
+      words: [['agar', 'agar', 'اگر', 'if'], ['to', 'to', 'تو', 'then'], ['warna', 'warna', 'ورنہ', 'otherwise'], ['jab', 'jab', 'جب', 'when (not a question)'], ['tab', 'tab', 'تب', 'then, at that time'], ['jaise hi', 'jaise hi', 'جیسے ہی', 'as soon as'], ['lekin', 'lekin', 'لیکن', 'but'], ['kyunke', 'kyunke', 'کیونکہ', 'because']],
+      grammar: { title: 'Agar ... to: if ... then', explain: [
+        'Start the condition with agar and the result with to: agar barish hui to hum ghar par rahenge, if it rains then we will stay home.',
+        'For something that did not happen (if only), use the past form with hota: agar mujhe pata hota to main aata, if I had known I would have come.',
+        'Jab ... tab works the same way for "when": jab tum aaoge tab khana khaenge, when you come, we will eat.'],
+        examples: [['Agar waqt mila to main aaunga', 'اگر وقت ملا تو میں آؤں گا', 'If I get time, I will come'], ['Agar mujhe pata hota to main aata', 'اگر مجھے پتا ہوتا تو میں آتا', 'If I had known, I would have come'], ['Jaldi karo, warna der ho jaegi', 'جلدی کرو، ورنہ دیر ہو جائے گی', 'Hurry, otherwise we will be late'], ['Jab tum aaoge tab khana khaenge', 'جب تم آؤ گے تب کھانا کھائیں گے', 'When you come, we will eat']] },
+      phrases: [['agar-ho-sake', 'Agar ho sake to', 'اگر ہو سکے تو', 'If possible'], ['agar-aap-chahein', 'Agar aap chahein', 'اگر آپ چاہیں', 'If you like'], ['kyunke-kaam', 'Main nahin aa saka kyunke kaam tha', 'میں نہیں آ سکا کیونکہ کام تھا', 'I could not come because I had work'], ['jaise-hi-pahunchoon', 'Jaise hi pahunchunga, phone karunga', 'جیسے ہی پہنچوں گا، فون کروں گا', 'As soon as I arrive, I will call']],
+      talk: { title: "Maybe on Friday", lines: [
+        ["Mamu", "Is Juma ko aa sakte ho? Khala ki beti ki mangni hai.", "اس جمعہ کو آ سکتے ہو؟ خالہ کی بیٹی کی منگنی ہے۔", "Can you come this Friday? It is Khala's daughter's engagement."],
+        ["You", "Juma ko? Agar kaam jaldi khatam hua to zaroor aaunga.", "جمعہ کو؟ اگر کام جلدی ختم ہوا تو ضرور آؤں گا۔", "On Friday? If work finishes early, I will definitely come."],
+        ["Mamu", "Aur agar nahin hua?", "اور اگر نہیں ہوا؟", "And if it does not?"],
+        ["You", "To shaam ko seedha wahin aa jaunga.", "تو شام کو سیدھا وہیں آ جاؤں گا۔", "Then I will come straight there in the evening."],
+        ["Mamu", "Achha. Aur agar bachi ko bhi le aao to sab khush ho jaenge.", "اچھا۔ اور اگر بچی کو بھی لے آؤ تو سب خوش ہو جائیں گے۔", "Good. And if you bring the little one too, everyone will be happy."],
+        ["You", "Zaroor! Agar woh so na gayi to.", "ضرور! اگر وہ سو نہ گئی تو۔", "Of course! As long as she has not fallen asleep."],
+        ["Mamu", "Haha, theek hai. Phir Juma ko milte hain.", "ہاہا، ٹھیک ہے۔ پھر جمعہ کو ملتے ہیں۔", "Ha, fine. See you on Friday then."]] } },
+    { id: 'l4-who', name: 'Who, which, that',
+      words: [['jo', 'jo', 'جو', 'who, which, that'], ['jis', 'jis', 'جس', 'whom, which (before ne, ko, se and so on)'], ['jahan', 'jahan', 'جہاں', 'where (not a question)'], ['jitna', 'jitna', 'جتنا', 'as much as'], ['aadmi', 'aadmi', 'آدمی', 'man'], ['aurat', 'aurat', 'عورت', 'woman'], ['shakhs', 'shakhs', 'شخص', 'person']],
+      grammar: { title: 'Jo ... woh: the one who', explain: [
+        'Urdu describes a person or thing with a pair: jo (who, which) opens the description and woh (that one) points back to it. Jo aadmi kal aaya tha, woh mere chacha hain: the man who came yesterday, he is my uncle.',
+        'Before little words like ne, ko, se and ka, jo becomes jis: jis ghar mein hum rehte hain, the house in which we live.'],
+        examples: [['Jo kitab tum ne di thi, woh bohat achhi hai', 'جو کتاب تم نے دی تھی، وہ بہت اچھی ہے', 'The book you gave me is very good'], ['Jis dukaan se hum ne liya, woh band hai', 'جس دکان سے ہم نے لیا، وہ بند ہے', 'The shop we bought it from is closed'], ['Jahan aap rehte hain, wahan sardi hai', 'جہاں آپ رہتے ہیں، وہاں سردی ہے', 'Where you live, it is cold']] },
+      phrases: [['jo-bhi', 'Jo bhi ho', 'جو بھی ہو', 'Whatever happens'], ['jitna-ho-sake', 'Jitna ho sake', 'جتنا ہو سکے', 'As much as possible'], ['woh-jo', 'Woh jo kal aaye the', 'وہ جو کل آئے تھے', 'The ones who came yesterday']],
+      talk: { title: "Who was that?", lines: [
+        ["Ammi", "Woh aadmi kaun tha jo subah aaya tha?", "وہ آدمی کون تھا جو صبح آیا تھا؟", "Who was the man who came this morning?"],
+        ["You", "Kaun sa? Jo neeli gaari mein aaya tha?", "کون سا؟ جو نیلی گاڑی میں آیا تھا؟", "Which one? The one who came in the blue car?"],
+        ["Ammi", "Haan, wahi. Jis ke haath mein ek dabba tha.", "ہاں، وہی۔ جس کے ہاتھ میں ایک ڈبا تھا۔", "Yes, him. The one with a box in his hand."],
+        ["You", "Woh mere daftar ke dost hain. Jo kitab main ne mangwai thi, woh de kar gaye.", "وہ میرے دفتر کے دوست ہیں۔ جو کتاب میں نے منگوائی تھی، وہ دے کر گئے۔", "He is my friend from the office. He dropped off the book I had ordered."],
+        ["Ammi", "To andar kyun nahin bulaya? Chai pila dete.", "تو اندر کیوں نہیں بلایا؟ چائے پلا دیتے۔", "Then why did you not ask him in? You could have given him tea."],
+        ["You", "Woh jaldi mein the, Ammi. Agli baar zaroor.", "وہ جلدی میں تھے، امی۔ اگلی بار ضرور۔", "He was in a hurry, Mom. Next time for sure."],
+        ["Ammi", "Agli baar jo bhi aaye, pehle chai!", "اگلی بار جو بھی آئے، پہلے چائے!", "Next time, whoever comes, tea first!"]] } },
+    { id: 'l4-compound', name: 'Compound verbs',
+      words: [['kar-lena', 'kar lena', 'کر لینا', 'to do (for yourself, done)'], ['kar-dena', 'kar dena', 'کر دینا', 'to do (for someone else)'], ['ho-jaana', 'ho jaana', 'ہو جانا', 'to become, to get done'], ['kha-lena', 'kha lena', 'کھا لینا', 'to eat up'], ['rakh-dena', 'rakh dena', 'رکھ دینا', 'to put down'], ['baith-jaana', 'baith jaana', 'بیٹھ جانا', 'to sit down'], ['nikal-jaana', 'nikal jaana', 'نکل جانا', 'to leave, to slip out']],
+      grammar: { title: 'Lena, dena, jaana: the helpers', explain: [
+        'Urdu often adds a helper verb to the main verb to show the action is complete or who it is for. With lena the action is for yourself: main ne kha liya, I have eaten (it is done). With dena it is for someone else: main ne kar diya, I did it for you.',
+        'Jaana shows a change or completion: woh so gaya, he fell asleep; kaam ho gaya, the work is done. Native speakers use these all the time, so they make you sound natural.'],
+        examples: [['Main ne khana kha liya', 'میں نے کھانا کھا لیا', 'I have eaten'], ['Yeh mez par rakh dijiye', 'یہ میز پر رکھ دیجیے', 'Please put this on the table'], ['Kaam ho gaya', 'کام ہو گیا', 'The work is done'], ['Bachche so gaye', 'بچے سو گئے', 'The children fell asleep']] },
+      phrases: [['ho-gaya', 'Ho gaya!', 'ہو گیا!', 'Done!'], ['kar-diya', 'Main ne kar diya', 'میں نے کر دیا', 'I have done it (for you)'], ['baith-jaiye', 'Baith jaiye', 'بیٹھ جائیے', 'Please have a seat'], ['bhool-jao', 'Bhool jao', 'بھول جاؤ', 'Forget it']],
+      talk: { title: "Helping in the kitchen", lines: [
+        ["Ammi", "Beta, zara yeh plate mez par rakh do.", "بیٹا، ذرا یہ پلیٹ میز پر رکھ دو۔", "Son, put this plate on the table."],
+        ["You", "Rakh di. Aur kuch?", "رکھ دی۔ اور کچھ؟", "Done. Anything else?"],
+        ["Ammi", "Haan, chawal dekh lo. Kahin jal na jaen.", "ہاں، چاول دیکھ لو۔ کہیں جل نہ جائیں۔", "Yes, check the rice. Make sure it does not burn."],
+        ["You", "Arre! Thode se jal gaye.", "ارے! تھوڑے سے جل گئے۔", "Oh no! A little has burned."],
+        ["Ammi", "Koi baat nahin. Upar wale nikal lo, neeche wale chhod do.", "کوئی بات نہیں۔ اوپر والے نکال لو، نیچے والے چھوڑ دو۔", "No problem. Take out the top part, leave the bottom."],
+        ["You", "Ho gaya. Ab baith jaoon?", "ہو گیا۔ اب بیٹھ جاؤں؟", "Done. Can I sit down now?"],
+        ["Ammi", "Haan, baith jao. Khana tayyar ho gaya.", "ہاں، بیٹھ جاؤ۔ کھانا تیار ہو گیا۔", "Yes, sit down. Dinner is ready."]] } },
+    { id: 'l4-done', name: 'Getting things done',
+      words: [['banwana', 'banwana', 'بنوانا', 'to have something made'], ['karwana', 'karwana', 'کروانا', 'to have something done'], ['dikhana', 'dikhana', 'دکھانا', 'to show'], ['sikhana', 'sikhana', 'سکھانا', 'to teach'], ['khilana', 'khilana', 'کھلانا', 'to feed'], ['pilana', 'pilana', 'پلانا', 'to give a drink'], ['marammat', 'marammat', 'مرمت', 'repair'], ['darzi', 'darzi', 'درزی', 'tailor']],
+      grammar: { title: 'Making and having things done', explain: [
+        'A longer verb means "make someone do it": khana (eat) becomes khilana (feed), seekhna (learn) becomes sikhana (teach), dekhna (see) becomes dikhana (show).',
+        'With -wana you have it done by someone else: main ne suit banwaya, I had a suit made; gaari theek karwai, I had the car fixed.'],
+        examples: [['Mujhe Urdu sikhaiye', 'مجھے اردو سکھائیے', 'Please teach me Urdu'], ['Main ne darzi se kameez banwai', 'میں نے درزی سے قمیض بنوائی', 'I had the tailor make a shirt'], ['Bachche ko khana khilao', 'بچے کو کھانا کھلاؤ', 'Feed the child']] },
+      phrases: [['dikhaiye', 'Zara dikhaiye', 'ذرا دکھائیے', 'Please show me'], ['theek-karwana', 'Mujhe yeh theek karwana hai', 'مجھے یہ ٹھیک کروانا ہے', 'I need to get this fixed'], ['chai-pilaiye', 'Chai pilaiye!', 'چائے پلائیے!', 'Treat us to some tea!']],
+      talk: { title: "At the tailor", lines: [
+        ["You", "Assalam-o-alaikum. Mujhe Eid ke liye ek kurta banwana hai.", "السلام علیکم۔ مجھے عید کے لیے ایک کرتا بنوانا ہے۔", "Hello. I would like to have a kurta made for Eid."],
+        ["Darzi", "Wa alaikum assalam. Kapra laaye hain?", "وعلیکم السلام۔ کپڑا لائے ہیں؟", "Hello. Did you bring the cloth?"],
+        ["You", "Ji, yeh lijiye. Aur yeh purana kurta naap ke liye.", "جی، یہ لیجیے۔ اور یہ پرانا کرتا ناپ کے لیے۔", "Yes, here it is. And this old kurta for the measurements."],
+        ["Darzi", "Theek hai. Aasteenein lambi chahiye ya chhoti?", "ٹھیک ہے۔ آستینیں لمبی چاہئیں یا چھوٹی؟", "All right. Do you want long sleeves or short?"],
+        ["You", "Lambi. Aur thoda khula banaiye.", "لمبی۔ اور تھوڑا کھلا بنائیے۔", "Long. And make it a little loose."],
+        ["Darzi", "Agle Juma tak ho jaega.", "اگلے جمعہ تک ہو جائے گا۔", "It will be ready by next Friday."],
+        ["You", "Eid se pehle? Bohat shukriya!", "عید سے پہلے؟ بہت شکریہ!", "Before Eid? Thank you so much!"]] } },
+    { id: 'l4-said', name: 'Telling what others said',
+      words: [['kehna', 'kehna', 'کہنا', 'to say'], ['batana', 'batana', 'بتانا', 'to tell'], ['poochhna', 'poochhna', 'پوچھنا', 'to ask'], ['ke', 'ke', 'کہ', 'that (joining words)'], ['khabar', 'khabar', 'خبر', 'news'], ['pata', 'pata', 'پتا', 'knowledge, awareness'], ['shayad', 'shayad', 'شاید', 'perhaps']],
+      grammar: { title: 'Ke: he said that ...', explain: [
+        'Join a reported sentence with ke, and keep the words as they were said: Abbu ne kaha ke woh kal aaenge, Dad said that he will come tomorrow.',
+        'To ask what someone wants to know: Nani poochh rahi hain ke tum kab aaoge, Nani is asking when you will come.'],
+        examples: [['Unhon ne kaha ke woh thak gaye hain', 'انہوں نے کہا کہ وہ تھک گئے ہیں', 'He said that he is tired'], ['Mujhe pata hai ke tum masroof ho', 'مجھے پتا ہے کہ تم مصروف ہو', 'I know that you are busy'], ['Ammi poochh rahi hain ke khana khaya', 'امی پوچھ رہی ہیں کہ کھانا کھایا', 'Mom is asking whether you ate']] },
+      phrases: [['kya-kaha', 'Unhon ne kya kaha?', 'انہوں نے کیا کہا؟', 'What did they say?'], ['pata-hai', 'Mujhe pata hai', 'مجھے پتا ہے', 'I know'], ['pata-nahin', 'Mujhe pata nahin', 'مجھے پتا نہیں', "I don't know"], ['khabar-suni', 'Aap ne khabar suni?', 'آپ نے خبر سنی؟', 'Did you hear the news?']],
+      talk: { title: "Passing on a message", lines: [
+        ["Behen", "Nani ne phone par kya kaha?", "نانی نے فون پر کیا کہا؟", "What did Nani say on the phone?"],
+        ["You", "Unhon ne kaha ke woh Itwaar ko aa rahi hain.", "انہوں نے کہا کہ وہ اتوار کو آ رہی ہیں۔", "She said she is coming on Sunday."],
+        ["Behen", "Akeli? Ya Nana bhi?", "اکیلی؟ یا نانا بھی؟", "On her own? Or Nana too?"],
+        ["You", "Nana bhi. Aur unhon ne kaha ke khana woh khud banaengi.", "نانا بھی۔ اور انہوں نے کہا کہ کھانا وہ خود بنائیں گی۔", "Nana too. And she said she will cook herself."],
+        ["Behen", "Phir to maza aa jaega! Aur kuch poochha?", "پھر تو مزہ آ جائے گا! اور کچھ پوچھا؟", "That will be great! Did she ask anything else?"],
+        ["You", "Haan, poochh rahi thin ke bachche kaise hain, aur tumhari naukri kaisi chal rahi hai.", "ہاں، پوچھ رہی تھیں کہ بچے کیسے ہیں، اور تمہاری نوکری کیسی چل رہی ہے۔", "Yes, she was asking how the children are, and how your job is going."],
+        ["Behen", "Unhein batana ke sab theek hai!", "انہیں بتانا کہ سب ٹھیک ہے!", "Tell her everything is fine!"]] } },
+    { id: 'l4-errands', name: 'Doctor and bank',
+      words: [['mareez', 'mareez', 'مریض', 'patient'], ['nuskha', 'nuskha', 'نسخہ', 'prescription'], ['khuraak', 'khuraak', 'خوراک', 'dose, diet'], ['khansi', 'khansi', 'کھانسی', 'cough'], ['zukaam', 'zukaam', 'زکام', 'a cold'], ['bank', 'bank', 'بینک', 'bank'], ['khaata', 'khaata', 'کھاتا', 'account'], ['form', 'form', 'فارم', 'form'], ['dastkhat', 'dastkhat', 'دستخط', 'signature']],
+      grammar: { title: 'Since and for: se', explain: [
+        'For how long something has been going on, use se with the present: teen din se bukhaar hai, I have had a fever for three days.',
+        'Kab se? asks "since when?": aap kab se yahan rehte hain?'],
+        examples: [['Do din se khansi hai', 'دو دن سے کھانسی ہے', 'I have had a cough for two days'], ['Main paanch saal se Canada mein hoon', 'میں پانچ سال سے کینیڈا میں ہوں', 'I have been in Canada for five years'], ['Aap kab se intezaar kar rahe hain?', 'آپ کب سے انتظار کر رہے ہیں؟', 'How long have you been waiting?']] },
+      phrases: [['kab-se', 'Kab se?', 'کب سے؟', 'Since when?'], ['din-mein-teen', 'Din mein teen baar', 'دن میں تین بار', 'Three times a day'], ['khana-ke-baad', 'Khane ke baad', 'کھانے کے بعد', 'After meals'], ['dastkhat-kahan', 'Dastkhat kahan karoon?', 'دستخط کہاں کروں؟', 'Where do I sign?']],
+      talk: { title: "Taking Nana to the doctor", lines: [
+        ["Doctor", "Ji, kya taklif hai?", "جی، کیا تکلیف ہے؟", "Yes, what is the problem?"],
+        ["You", "Nana ko teen din se khansi aur bukhaar hai.", "نانا کو تین دن سے کھانسی اور بخار ہے۔", "Nana has had a cough and fever for three days."],
+        ["Doctor", "Raat ko khansi zyada hoti hai?", "رات کو کھانسی زیادہ ہوتی ہے؟", "Is the cough worse at night?"],
+        ["Nana", "Ji, raat ko neend nahin aati.", "جی، رات کو نیند نہیں آتی۔", "Yes, I cannot sleep at night."],
+        ["Doctor", "Yeh dawai din mein do baar, khane ke baad dein. Aur garam paani piyein.", "یہ دوائی دن میں دو بار، کھانے کے بعد دیں۔ اور گرم پانی پئیں۔", "Give this medicine twice a day, after meals. And drink warm water."],
+        ["You", "Kitne din tak?", "کتنے دن تک؟", "For how many days?"],
+        ["Doctor", "Paanch din. Agar bukhaar na utra to dobara aaiye.", "پانچ دن۔ اگر بخار نہ اترا تو دوبارہ آئیے۔", "Five days. If the fever does not come down, come back."]] } },
+    { id: 'l4-events', name: 'Weddings and Eid',
+      words: [['shaadi', 'shaadi', 'شادی', 'wedding, marriage'], ['dulha', 'dulha', 'دولہا', 'groom'], ['dulhan', 'dulhan', 'دلہن', 'bride'], ['mehndi', 'mehndi', 'مہندی', 'henna night'], ['baraat', 'baraat', 'بارات', "the groom's procession"], ['walima', 'walima', 'ولیمہ', 'reception after the wedding'], ['eidi', 'eidi', 'عیدی', 'Eid money gift'], ['mubarak', 'mubarak', 'مبارک', 'blessed, congratulations'], ['dawat', 'dawat', 'دعوت', 'invitation, a dinner party']],
+      grammar: { title: 'Congratulations and good wishes', explain: [
+        'Mubarak ho is the all-purpose congratulations: shaadi mubarak ho, Eid mubarak. The reply is khair mubarak (and blessings to you) for Eid, or shukriya.',
+        'Wishes for someone often use the subjunctive -e or -ein: Allah aap ko khush rakhe, may Allah keep you happy.'],
+        examples: [['Eid mubarak!', 'عید مبارک!', 'Happy Eid!'], ['Khair mubarak', 'خیر مبارک', 'Happy Eid to you too (the reply)'], ['Shaadi bohat bohat mubarak ho', 'شادی بہت بہت مبارک ہو', 'Many congratulations on the wedding'], ['Allah aap ko khush rakhe', 'اللہ آپ کو خوش رکھے', 'May Allah keep you happy']] },
+      phrases: [['dawat-ka-shukriya', 'Dawat ka shukriya', 'دعوت کا شکریہ', 'Thank you for the invitation'], ['zaroor-aaenge', 'Hum zaroor aaenge', 'ہم ضرور آئیں گے', 'We will definitely come'], ['bohat-khoobsurat', 'Bohat khoobsurat lag rahi hain', 'بہت خوبصورت لگ رہی ہیں', 'You look very beautiful (to a woman)'], ['eidi-do', 'Eidi kahan hai?', 'عیدی کہاں ہے؟', 'Where is my Eid money? (a joke children make)']],
+      talk: { title: "Eid morning", lines: [
+        ["Taya", "Eid mubarak, beta!", "عید مبارک، بیٹا!", "Happy Eid, son!"],
+        ["You", "Khair mubarak, Taya ji! Aap ko bhi bohat bohat mubarak ho.", "خیر مبارک، تایا جی! آپ کو بھی بہت بہت مبارک ہو۔", "Happy Eid to you too, Uncle! Many, many blessings to you as well."],
+        ["Taya", "Namaz parh aaye?", "نماز پڑھ آئے؟", "Did you go for the prayer?"],
+        ["You", "Ji, subah saat baje. Masjid bhari hui thi!", "جی، صبح سات بجے۔ مسجد بھری ہوئی تھی!", "Yes, at seven this morning. The mosque was packed!"],
+        ["Taya", "Mashallah. Bachchon ki eidi tayyar hai. Kahan hain woh?", "ماشاءاللہ۔ بچوں کی عیدی تیار ہے۔ کہاں ہیں وہ؟", "Wonderful. The children's Eid money is ready. Where are they?"],
+        ["You", "Kapre badal rahe hain. Naye kapron ka bohat shauq hai!", "کپڑے بدل رہے ہیں۔ نئے کپڑوں کا بہت شوق ہے!", "They are changing. They love their new clothes!"],
+        ["Taya", "Bulao unhein. Pehle salam, phir eidi!", "بلاؤ انہیں۔ پہلے سلام، پھر عیدی!", "Call them. Salaam first, then Eid money!"]] } }
+  ]
+};

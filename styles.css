@@ -1,0 +1,122 @@
+/* Baat Cheet. An Urdu notebook: white paper, dark ink, one deep green accent, the Urdu
+   script as the identity. Atkinson Hyperlegible for English, Noto Nastaliq Urdu for Urdu.
+   Spacing on a 4px scale; radius 8 for controls, 14 for panels. Mobile first. */
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("AtkinsonHyperlegible-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("AtkinsonHyperlegible-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Noto Nastaliq Urdu"; src: url("NotoNastaliqUrdu.ttf") format("truetype"); font-weight: 400 700; font-display: swap; }
+:root {
+  --ink: #18233a; --soft: #4f5b6e; --line: #d7dde4; --paper: #ffffff; --panel: #f1f5f3;
+  --green: #0b6b4f; --green-dark: #084d39; --green-wash: #e3f1eb; --saffron: #b7791f; --warn: #a3321e;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px; --s12: 48px;
+  --r-control: 8px; --r-panel: 14px;
+  --ui: "Atkinson Hyperlegible", system-ui, sans-serif; --urdu: "Noto Nastaliq Urdu", serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.5 var(--ui); }
+main { max-width: 40rem; margin: 0 auto; padding: calc(var(--s6) + env(safe-area-inset-top, 0px)) var(--s4) calc(96px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: var(--s4); }
+h1 { font-size: 1.75rem; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; line-height: 1.25; margin: 0; }
+p { margin: 0; }
+.help { color: var(--soft); }
+.note { color: var(--soft); font-size: 0.95rem; }
+
+/* Identity */
+.masthead { display: flex; flex-wrap: wrap-reverse; align-items: flex-end; justify-content: space-between; gap: 0 var(--s4); padding-bottom: var(--s3); border-bottom: 2px solid var(--ink); }
+.wordmark { font: 400 2.4rem/1.9 var(--urdu); direction: rtl; margin: 0; color: var(--ink); white-space: nowrap; flex: none; }
+.masthead-text { display: flex; flex-direction: column; gap: 2px; }
+.masthead-text strong { font-size: 1.2rem; }
+
+/* Buttons: one size, three emphases. */
+.btn { font: 700 1rem/1.2 var(--ui); min-height: 48px; padding: var(--s2) var(--s4); border-radius: var(--r-control); border: 2px solid var(--green); background: var(--green); color: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; gap: var(--s2); }
+.btn:hover { background: var(--green-dark); border-color: var(--green-dark); }
+.btn.quiet { background: var(--paper); color: var(--green); }
+.btn.quiet:hover { background: var(--green-wash); }
+.btn.danger { background: var(--paper); color: var(--warn); border-color: var(--warn); }
+.btn:disabled { opacity: 0.4; cursor: default; }
+.btn:focus-visible, .tabs button:focus-visible, .unit:focus-visible, .choice:focus-visible { outline: 3px solid var(--saffron); outline-offset: 2px; }
+.row { display: flex; gap: var(--s2); }
+.row > * { flex: 1 1 0; min-width: 0; }
+.back { align-self: flex-start; background: none; border: 0; color: var(--green); font: 700 1rem/1 var(--ui); min-height: 44px; padding: 0; cursor: pointer; }
+.back::before { content: "\2039"; font-size: 1.5rem; margin-right: var(--s2); vertical-align: -1px; }
+.no-audio { color: var(--soft); font-size: 0.95rem; }
+.card .no-audio { max-width: 22rem; }
+
+/* Continue panel */
+.continue { background: var(--green-wash); border-radius: var(--r-panel); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); }
+.continue .btn { width: 100%; }
+
+/* Lessons: numbered rows, not cards. */
+.level { display: flex; flex-direction: column; gap: var(--s2); padding-top: var(--s6); }
+.level-head { display: flex; flex-direction: column; gap: var(--s1); }
+.units { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.unit { display: grid; grid-template-columns: 32px 1fr auto; align-items: center; gap: var(--s3); width: 100%; min-height: 76px; padding: var(--s3) 0; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); text-align: left; cursor: pointer; font: inherit; }
+.unit .num { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; color: var(--soft); }
+.unit.done .num { background: var(--green); border-color: var(--green); color: #fff; }
+.unit-text { display: flex; flex-direction: column; gap: 2px; }
+.unit-name { font-weight: 700; overflow-wrap: anywhere; }
+.unit .count { color: var(--soft); font-size: 0.95rem; }
+.unit::after { content: "\203A"; color: var(--soft); font-size: 1.5rem; }
+
+/* The flashcard: one focus, so centred. */
+.card { background: var(--panel); border-radius: var(--r-panel); padding: var(--s8) var(--s4) var(--s4); display: flex; flex-direction: column; gap: var(--s3); align-items: center; text-align: center; }
+.card.left { align-items: stretch; text-align: left; padding: var(--s4); }
+.card .row { align-self: stretch; }
+.roman { font-size: 2rem; font-weight: 700; line-height: 1.2; }
+.roman.small { font-size: 1.3rem; }
+.urdu { font: 400 1.8rem/2.2 var(--urdu); direction: rtl; }
+.urdu.big { font-size: 2.4rem; }
+.urdu.huge { font-size: 4.5rem; line-height: 1.6; }
+.card.left .urdu, .line .urdu, .frow .urdu, .pair .urdu { text-align: right; }
+.english { font-size: 1.1rem; }
+.unchecked { color: var(--saffron); font-size: 0.9rem; font-weight: 700; }
+.explain { font-size: 1.05rem; max-width: 36rem; }
+.status { min-height: 1.5em; }
+.status.warn { color: var(--warn); font-weight: 700; }
+.week { font-weight: 700; }
+
+/* Quiz choices */
+.choices { display: flex; flex-direction: column; gap: var(--s2); }
+.choice { background: var(--paper); color: var(--ink); border: 2px solid var(--line); border-radius: var(--r-control); min-height: 56px; padding: var(--s3) var(--s4); font: 400 1.05rem/1.3 var(--ui); cursor: pointer; text-align: left; width: 100%; }
+.choice:hover { border-color: var(--green); }
+.choice.right { border-color: var(--green); background: var(--green-wash); }
+.choice.wrong { border-color: var(--warn); background: #f8e7e3; }
+.back-face { display: flex; flex-direction: column; gap: var(--s2); align-items: center; }
+
+/* Conversation: speech bubbles, yours on the right. */
+.line { display: flex; flex-direction: column; gap: var(--s2); padding: var(--s3) var(--s4); border-radius: var(--r-panel) var(--r-panel) var(--r-panel) 4px; background: var(--panel); max-width: 88%; }
+.line.you { align-self: flex-end; background: var(--green-wash); border-radius: var(--r-panel) var(--r-panel) 4px var(--r-panel); }
+.line .who { font-weight: 700; color: var(--soft); font-size: 0.9rem; }
+.line-body { display: flex; flex-direction: column; gap: var(--s1); }
+.line .btn, .line .no-audio { align-self: flex-start; }
+
+/* Forms */
+.field { display: flex; flex-direction: column; gap: var(--s1); font-weight: 700; }
+.field input, .pick, .type-box, #find-box { font: 400 16px/1.2 var(--ui); min-height: 48px; padding: 0 var(--s3); border: 2px solid var(--line); border-radius: var(--r-control); background: var(--paper); color: var(--ink); width: 100%; }
+.field input:focus, .pick:focus, .type-box:focus, #find-box:focus { outline: none; border-color: var(--green); }
+.check { display: flex; gap: var(--s3); align-items: center; min-height: 44px; }
+.check input { width: 22px; height: 22px; accent-color: var(--green); flex: none; }
+
+/* Family and lists */
+.frow { display: flex; flex-direction: column; gap: var(--s2); padding: var(--s6) 0 var(--s4); border-bottom: 1px solid var(--line); }
+.box { align-self: flex-start; padding: 2px var(--s2); border-radius: 4px; background: var(--panel); color: var(--soft); font-size: 0.9rem; font-weight: 700; }
+.results { display: flex; flex-direction: column; gap: var(--s3); }
+.pair { display: flex; flex-direction: column; gap: var(--s1); padding: var(--s3) 0; border-top: 1px solid var(--line); width: 100%; }
+
+/* Bottom tabs: equal widths, the current one marked with a bar. */
+.tabs { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--paper); border-top: 1px solid var(--line); padding: 0 var(--s2) env(safe-area-inset-bottom, 0px); }
+.tabs button { flex: 1 1 0; min-width: 0; min-height: 56px; border: 0; border-top: 3px solid transparent; background: none; color: var(--soft); font: 700 0.95rem/1 var(--ui); cursor: pointer; padding: 0 2px; }
+.tabs button[aria-current="true"] { color: var(--green); border-top-color: var(--green); }
+
+@media (min-width: 700px) {
+  main { padding-top: var(--s12); gap: var(--s6); }
+  h1 { font-size: 2.1rem; }
+  .wordmark { font-size: 3.2rem; }
+  .choices { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; }
+  .tabs { justify-content: center; }
+  .tabs button { flex: 0 1 160px; }
+}
+/* Quiz answers share one height even when a long answer wraps. */
+.choice { min-height: 72px; }
+/* On the narrowest phones, lesson names drop a size so they stay on one line. */
+@media (max-width: 359px) { .unit-name { font-size: 0.92rem; } .unit .count { font-size: 0.875rem; } .unit { gap: var(--s2); } }

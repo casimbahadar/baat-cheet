@@ -1,0 +1,96 @@
+// Level 6, Expert: fast natural speech, Urdu mixed with Punjabi at home, the newspaper,
+// writing in Urdu script, poetry, and speaking at family gatherings.
+export const LEVEL_6 = {
+  id: 'L6', name: 'Level 6: Expert', goal: 'Understand fast natural speech and regional variety, read and write freely, and enjoy poetry.',
+  units: [
+    { id: 'l6-fast', name: 'Fast speech',
+      words: [['kya-kar-rahe', "kya kar re ho", 'کیا کر رہے ہو', 'what are you doing (as it is said fast)'], ['kahan-ja', "kahan ja re ho", 'کہاں جا رہے ہو', 'where are you going (fast)'], ['achha-ji', 'achha ji', 'اچھا جی', 'oh really, okay then'], ['chalo', 'chalo', 'چلو', "okay then, let's go"], ['yaar', 'yaar', 'یار', 'mate, friend (casual)'], ['bas-yaar', 'bas yaar', 'بس یار', 'enough, come on'], ['koi-nahin', 'koi nahin', 'کوئی نہیں', 'no worries (casual)'], ['haan-ji', 'haan ji', 'ہاں جی', 'yes indeed']],
+      grammar: { title: 'What happens to words at speed', explain: [
+        'In fast speech, rahe often sounds like re: kya kar re ho. Hai at the end of a question can almost disappear: kya haal? for kya haal hai?',
+        'Chalo, achha, theek hai and bas carry a lot of meaning through tone: a rising achha? is "really?", a falling achha is "I see". Listen for the tune, not only the words.'],
+        examples: [['Kya haal?', 'کیا حال؟', "How's it going? (short)"], ['Chalo, phir milte hain', 'چلو، پھر ملتے ہیں', 'Okay then, see you'], ['Achha? Sach mein?', 'اچھا؟ سچ میں؟', 'Really? For real?'], ['Koi nahin, yaar', 'کوئی نہیں، یار', 'No worries, mate']] },
+      phrases: [['kya-scene', 'Kya scene hai?', 'کیا سین ہے؟', "What's the plan? (young people's slang)"], ['chal-theek', 'Chal theek hai', 'چل ٹھیک ہے', 'Fine then (very casual)'], ['bohat-hogaya', 'Bas, bohat ho gaya', 'بس، بہت ہو گیا', "That's enough now"]],
+      talk: { title: "Cousins on the phone", lines: [
+        ["Cousin", "Oye! Kya haal? Kya kar re ho?", "اوئے! کیا حال؟ کیا کر رہے ہو؟", "Hey! How's it going? What are you up to?"],
+        ["You", "Bas yaar, kuch khaas nahin. Tum sunao?", "بس یار، کچھ خاص نہیں۔ تم سناؤ؟", "Not much, mate. What about you?"],
+        ["Cousin", "Sab badhiya. Shaam ko chakkar lagao, chai peete hain.", "سب بڑھیا۔ شام کو چکر لگاؤ، چائے پیتے ہیں۔", "All good. Drop by in the evening, we will have tea."],
+        ["You", "Aaj? Yaar, aaj thoda mushkil hai.", "آج؟ یار، آج تھوڑا مشکل ہے۔", "Today? Mate, today is a bit hard."],
+        ["Cousin", "Arre chhodo, bas aadha ghanta!", "ارے چھوڑو، بس آدھا گھنٹا!", "Oh come on, just half an hour!"],
+        ["You", "Achha chalo, theek hai. Saat baje aata hoon.", "اچھا چلو، ٹھیک ہے۔ سات بجے آتا ہوں۔", "Okay, fine. I'll come at seven."],
+        ["Cousin", "Pakka?", "پکا؟", "Promise?"],
+        ["You", "Pakka!", "پکا!", "Promise!"]] } },
+    { id: 'l6-punjabi', name: 'Urdu and Punjabi at home',
+      words: [['ki-haal-ae', 'ki haal ae', 'کی حال اے', 'how are you (Punjabi)'], ['changa', 'changa', 'چنگا', 'good, fine (Punjabi)'], ['tusi', 'tusi', 'تُسی', 'you, respectful (Punjabi)'], ['assi', 'assi', 'اسی', 'we (Punjabi)'], ['kithe', 'kithe', 'کتھے', 'where (Punjabi)'], ['ki', 'ki', 'کی', 'what (Punjabi)'], ['hor', 'hor', 'ہور', 'more, else (Punjabi)'], ['puttar', 'puttar', 'پتر', 'son, child (Punjabi)']],
+      grammar: { title: 'Two languages in one kitchen', explain: [
+        'Many Pakistani families mix Urdu and Punjabi in the same sentence. Punjabi often swaps a few key words: kya becomes ki, kahan becomes kithe, achha becomes changa, and the verb ending hai becomes ae.',
+        'If an elder speaks Punjabi, answering in clear Urdu is fine and polite; most Punjabi speakers understand Urdu. Picking up their greetings shows warmth.'],
+        examples: [['Ki haal ae, puttar?', 'کی حال اے، پتر؟', 'How are you, son? (Punjabi)'], ['Changa ji, tusi sunao', 'چنگا جی، تُسی سناؤ', 'Fine, and you? (Punjabi)'], ['Hor ki haal chaal?', 'ہور کی حال چال؟', 'What else is new? (Punjabi)']] },
+      phrases: [['main-theek-aan', 'Main theek aan', 'میں ٹھیک آں', 'I am fine (Punjabi)'], ['roti-kha-lai', 'Roti kha lai?', 'روٹی کھا لئی؟', 'Have you eaten? (Punjabi)'], ['kithe-ja', 'Kithe ja rehe o?', 'کتھے جا رہے او؟', 'Where are you going? (Punjabi)']],
+      talk: { title: "Dada speaks Punjabi", lines: [
+        ["Dada", "Ki haal ae, puttar? Roti kha lai?", "کی حال اے، پتر؟ روٹی کھا لئی؟", "How are you, son? Have you eaten?"],
+        ["You", "Changa ji, Dada. Ji, kha li. Aap ne khaya?", "چنگا جی، دادا۔ جی، کھا لی۔ آپ نے کھایا؟", "Fine, Dada. Yes, I ate. Have you eaten?"],
+        ["Dada", "Haan. Tusi Punjabi vi bolan lag paye o!", "ہاں۔ تُسی پنجابی وی بولن لگ پئے او!", "Yes. You have started speaking Punjabi too!"],
+        ["You", "Thodi thodi, Dada. Aap se seekh raha hoon.", "تھوڑی تھوڑی، دادا۔ آپ سے سیکھ رہا ہوں۔", "A little, Dada. I am learning from you."],
+        ["Dada", "Shabash! Hor sunao, kamm kiddan chal reha ae?", "شاباش! ہور سناؤ، کم کداں چل رہا اے؟", "Well done! Tell me more, how's work going?"],
+        ["You", "Theek chal raha hai, Dada. Alhamdulillah.", "ٹھیک چل رہا ہے، دادا۔ الحمدللہ۔", "It is going well, Dada. Thank God."],
+        ["Dada", "Bas, mehnat karda reh, puttar.", "بس، محنت کردا رہ، پتر۔", "Just keep working hard, son."]] } },
+    { id: 'l6-read', name: 'Reading the newspaper',
+      words: [['surkhi', 'surkhi', 'سرخی', 'headline'], ['idaariya', 'idaariya', 'اداریہ', 'editorial'], ['bayaan', 'bayaan', 'بیان', 'statement'], ['wazir', 'wazir', 'وزیر', 'minister'], ['ijlaas', 'ijlaas', 'اجلاس', 'meeting, session'], ['muaashi', 'muaashi', 'معاشی', 'economic'], ['taaleem', 'taaleem', 'تعلیم', 'education'], ['sehat', 'sehat', 'صحت', 'health']],
+      grammar: { title: 'Written Urdu sounds more formal', explain: [
+        'Newspapers use more Persian and Arabic words than speech: aaghaaz for shuroo (start), iqdaam for qadam (step, measure), mutaabiq for ke hisaab se (according to).',
+        'Read the headline, guess the story, then read the first paragraph. The same twenty or so formal words come up again and again.'],
+        examples: [['Hukoomat ne naye iqdaamaat ka elaan kiya', 'حکومت نے نئے اقدامات کا اعلان کیا', 'The government announced new measures'], ['Report ke mutaabiq mehngaai kam hui', 'رپورٹ کے مطابق مہنگائی کم ہوئی', 'According to the report, inflation fell'], ['Naye saal ka aaghaaz', 'نئے سال کا آغاز', 'The start of the new year']] },
+      phrases: [['aaj-ki-surkhi', 'Aaj ki surkhi kya hai?', 'آج کی سرخی کیا ہے؟', "What is today's headline?"], ['mutaabiq', 'Is ke mutaabiq', 'اس کے مطابق', 'According to this']],
+      talk: { title: "Reading with Abbu", lines: [
+        ["Abbu", "Yeh surkhi parho.", "یہ سرخی پڑھو۔", "Read this headline."],
+        ["You", "Hukoomat ne taaleem ke liye naye iqdaamaat ka elaan kiya.", "حکومت نے تعلیم کے لیے نئے اقدامات کا اعلان کیا۔", "The government announced new measures for education."],
+        ["Abbu", "Shabash! Iqdaamaat ka matlab kya hai?", "شاباش! اقدامات کا مطلب کیا ہے؟", "Well done! What does iqdaamaat mean?"],
+        ["You", "Qadam, yaani steps.", "قدم، یعنی اسٹیپس۔", "Steps, that is, measures."],
+        ["Abbu", "Bilkul. Ab neeche wali khabar parho, aahista aahista.", "بالکل۔ اب نیچے والی خبر پڑھو، آہستہ آہستہ۔", "Exactly. Now read the news below, slowly."],
+        ["You", "Report ke mutaabiq kal barish hogi.", "رپورٹ کے مطابق کل بارش ہوگی۔", "According to the report, it will rain tomorrow."],
+        ["Abbu", "Dekha? Ab tum akhbaar parh sakte ho!", "دیکھا؟ اب تم اخبار پڑھ سکتے ہو!", "See? Now you can read the newspaper!"]] } },
+    { id: 'l6-write', name: 'Writing messages in Urdu',
+      words: [['khat', 'khat', 'خط', 'letter'], ['paighaam', 'paighaam', 'پیغام', 'message'], ['mohtaram', 'mohtaram', 'محترم', 'respected (to a man)'], ['pyaari', 'pyaari', 'پیاری', 'dear (to a woman or girl)'], ['umeed', 'umeed', 'امید', 'hope'], ['khairiyat', 'khairiyat', 'خیریت', 'wellbeing'], ['wassalam', 'wassalam', 'والسلام', 'with regards (closing a letter)']],
+      grammar: { title: 'How a family letter goes', explain: [
+        'Open with a respectful greeting and the person: mohtaram Abbu ji, assalam-o-alaikum. Then ask after their health: umeed hai aap khairiyat se honge, I hope you are well.',
+        'End with a dua or regards: duaon mein yaad rakhiye, wassalam, and your name. When typing in Urdu script, words join on their own; you only choose the letters.'],
+        examples: [['Mohtaram Abbu ji, assalam-o-alaikum', 'محترم ابو جی، السلام علیکم', 'Dear respected Dad, peace be upon you'], ['Umeed hai aap khairiyat se honge', 'امید ہے آپ خیریت سے ہوں گے', 'I hope you are well'], ['Duaon mein yaad rakhiye. Wassalam', 'دعاؤں میں یاد رکھیے۔ والسلام', 'Remember me in your prayers. With regards']] },
+      phrases: [['sab-ko-salam', 'Sab ko salam kahiye', 'سب کو سلام کہیے', 'Give everyone my salaam'], ['jald-milenge', 'Jald milenge, inshallah', 'جلد ملیں گے، ان شاءاللہ', 'We will meet soon, if Allah wills']],
+      talk: { title: "A message to Nani", lines: [
+        ["You", "Pyaari Nani jaan, assalam-o-alaikum.", "پیاری نانی جان، السلام علیکم۔", "Dearest Nani, peace be upon you."],
+        ["You", "Umeed hai aap khairiyat se hongi. Hum sab theek hain.", "امید ہے آپ خیریت سے ہوں گی۔ ہم سب ٹھیک ہیں۔", "I hope you are well. We are all fine."],
+        ["You", "Bachi aap ko bohat yaad karti hai. Jald milenge, inshallah.", "بچی آپ کو بہت یاد کرتی ہے۔ جلد ملیں گے، ان شاءاللہ۔", "The little one misses you a lot. We will meet soon, if Allah wills."],
+        ["You", "Duaon mein yaad rakhiyega. Apna khayal rakhiyega. Wassalam.", "دعاؤں میں یاد رکھیے گا۔ اپنا خیال رکھیے گا۔ والسلام۔", "Remember us in your prayers. Take care of yourself. With love."],
+        ["Nani", "Jeete raho, beta! Tumhara paighaam parh kar dil khush ho gaya.", "جیتے رہو، بیٹا! تمہارا پیغام پڑھ کر دل خوش ہو گیا۔", "Bless you, son! Reading your message made my heart happy."],
+        ["Nani", "Aur Urdu mein! Mujhe yaqeen nahin aa raha.", "اور اردو میں! مجھے یقین نہیں آ رہا۔", "And in Urdu! I can hardly believe it."]] } },
+    { id: 'l6-poetry', name: 'Poetry and famous lines',
+      words: [['sher', "she'r", 'شعر', 'a couplet'], ['ghazal', 'ghazal', 'غزل', 'a love poem in couplets'], ['shaayar', 'shaayar', 'شاعر', 'poet'], ['nazm', 'nazm', 'نظم', 'a poem'], ['ishq', 'ishq', 'عشق', 'deep love'], ['zindagi', 'zindagi', 'زندگی', 'life'], ['khwaab', 'khwaab', 'خواب', 'dream'], ['manzil', 'manzil', 'منزل', 'destination, goal']],
+      grammar: { title: 'How a couplet works', explain: [
+        'A she\'r is two lines with the same rhythm. In a ghazal, every couplet ends with the same rhyme and often the same final word, called the radeef.',
+        'Poetry uses older, beautiful words and changes the word order for the rhythm, so read it slowly and ask an elder about lines they love: many know couplets by Ghalib, Iqbal and Faiz by heart.'],
+        examples: [['Zindagi ek safar hai', 'زندگی ایک سفر ہے', 'Life is a journey'], ['Manzil door nahin', 'منزل دور نہیں', 'The destination is not far'], ['Aap ko koi sher yaad hai?', 'آپ کو کوئی شعر یاد ہے؟', 'Do you remember a couplet?']] },
+      phrases: [['wah-wah', 'Wah, wah!', 'واہ، واہ!', 'Bravo! (how listeners praise a couplet)'], ['irshaad', 'Irshaad', 'ارشاد', 'Please recite (said to invite a couplet)'], ['mukarrar', 'Mukarrar!', 'مکرر!', 'Once more! (asking to hear it again)'], ['pasandeeda-shaayar', 'Aap ka pasandeeda shaayar kaun hai?', 'آپ کا پسندیدہ شاعر کون ہے؟', 'Who is your favourite poet?']],
+      talk: { title: "Poetry with Nana", lines: [
+        ["You", "Nana, aap ka pasandeeda shaayar kaun hai?", "نانا، آپ کا پسندیدہ شاعر کون ہے؟", "Nana, who is your favourite poet?"],
+        ["Nana", "Allama Iqbal. Ek sher sunaoon?", "علامہ اقبال۔ ایک شعر سناؤں؟", "Allama Iqbal. Shall I recite a couplet?"],
+        ["You", "Irshaad!", "ارشاد!", "Please, go ahead!"],
+        ["Nana", "Pehle yeh batao, ghazal aur nazm mein kya farq hai?", "پہلے یہ بتاؤ، غزل اور نظم میں کیا فرق ہے؟", "First tell me, what is the difference between a ghazal and a nazm?"],
+        ["You", "Ghazal mein har sher alag hota hai, aur nazm ek hi mauzoo par hoti hai.", "غزل میں ہر شعر الگ ہوتا ہے، اور نظم ایک ہی موضوع پر ہوتی ہے۔", "In a ghazal each couplet stands on its own, and a nazm keeps to one subject."],
+        ["Nana", "Wah! Bilkul theek. Ab suno.", "واہ! بالکل ٹھیک۔ اب سنو۔", "Bravo! Exactly right. Now listen."],
+        ["You", "Wah, wah! Mukarrar!", "واہ، واہ! مکرر!", "Bravo! Once more!"]] } },
+    { id: 'l6-gather', name: 'Speaking at a family gathering',
+      words: [['mehmaan', 'mehmaan', 'مہمان', 'guest'], ['mezbaan', 'mezbaan', 'میزبان', 'host'], ['shukriya-ada', 'shukriya ada karna', 'شکریہ ادا کرنا', 'to give thanks'], ['khushi', 'khushi', 'خوشی', 'joy'], ['mauqa', 'mauqa', 'موقع', 'occasion, chance'], ['ikattha', 'ikattha', 'اکٹھا', 'together, gathered'], ['yaadein', 'yaadein', 'یادیں', 'memories']],
+      grammar: { title: 'Saying a few words to everyone', explain: [
+        'A short speech has three parts: thanks (main sab ka shukriya ada karna chahta hoon), a memory or feeling (yeh mauqa mere liye bohat khaas hai), and a dua (Allah is ghar ko hamesha khush rakhe).',
+        'Speak slowly. Elders love it when a younger person speaks Urdu in front of the family, and small mistakes are welcome.'],
+        examples: [['Main aap sab ka shukriya ada karna chahta hoon', 'میں آپ سب کا شکریہ ادا کرنا چاہتا ہوں', 'I want to thank you all'], ['Yeh mauqa mere liye bohat khaas hai', 'یہ موقع میرے لیے بہت خاص ہے', 'This occasion is very special to me'], ['Allah is ghar ko hamesha khush rakhe', 'اللہ اس گھر کو ہمیشہ خوش رکھے', 'May Allah always keep this home happy']] },
+      phrases: [['aaj-sab-ikatthe', 'Aaj hum sab ikatthe hain', 'آج ہم سب اکٹھے ہیں', 'Today we are all together'], ['purani-yaadein', 'Purani yaadein taaza ho gayin', 'پرانی یادیں تازہ ہو گئیں', 'Old memories came back'], ['ghalti-maaf', 'Meri ghaltiyan maaf kijiye', 'میری غلطیاں معاف کیجیے', 'Please forgive my mistakes (my Urdu)']],
+      talk: { title: "Nani's eightieth birthday", lines: [
+        ["You", "Assalam-o-alaikum sab ko. Meri ghaltiyan maaf kijiye, main Urdu seekh raha hoon.", "السلام علیکم سب کو۔ میری غلطیاں معاف کیجیے، میں اردو سیکھ رہا ہوں۔", "Hello everyone. Please forgive my mistakes, I am learning Urdu."],
+        ["You", "Aaj hum sab Nani ki saalgirah par ikatthe hain. Yeh mauqa mere liye bohat khaas hai.", "آج ہم سب نانی کی سالگرہ پر اکٹھے ہیں۔ یہ موقع میرے لیے بہت خاص ہے۔", "Today we are all together for Nani's birthday. This occasion is very special to me."],
+        ["You", "Nani, aap ne humein bohat pyaar diya. Allah aap ko lambi umar aur sehat de.", "نانی، آپ نے ہمیں بہت پیار دیا۔ اللہ آپ کو لمبی عمر اور صحت دے۔", "Nani, you have given us so much love. May Allah give you a long life and good health."],
+        ["Nani", "Jeete raho, mere bachche. Aaj mera dil bohat khush hai.", "جیتے رہو، میرے بچے۔ آج میرا دل بہت خوش ہے۔", "Bless you, my child. My heart is very happy today."],
+        ["Mamu", "Wah! Itni achhi Urdu kab seekh li?", "واہ! اتنی اچھی اردو کب سیکھ لی؟", "Wow! When did you learn such good Urdu?"],
+        ["You", "Aap sab se baat kar kar ke.", "آپ سب سے بات کر کر کے۔", "By talking with all of you, again and again."]] } }
+  ]
+};

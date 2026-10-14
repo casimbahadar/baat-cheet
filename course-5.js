@@ -1,0 +1,93 @@
+// Level 5, Advanced: speaking with nuance. Opinions, formal and respectful speech,
+// idioms and proverbs, the news, blessings, and telling a longer story.
+export const LEVEL_5 = {
+  id: 'L5', name: 'Level 5: Advanced', goal: 'Speak with nuance: opinions, feelings, formal and respectful speech, idioms and proverbs.',
+  units: [
+    { id: 'l5-opinion', name: 'Opinions and disagreeing kindly',
+      words: [['khayal', 'khayal', 'خیال', 'thought, opinion'], ['raaye', 'raaye', 'رائے', 'opinion'], ['meri-nazar', 'meri nazar mein', 'میری نظر میں', 'in my view'], ['sahi', 'sahi', 'صحیح', 'right, correct'], ['ghalat', 'ghalat', 'غلط', 'wrong'], ['ittefaq', 'ittefaq', 'اتفاق', 'agreement'], ['balke', 'balke', 'بلکہ', 'rather, instead'], ['shayad-aap', 'shayad aap theek keh rahe hain', 'شاید آپ ٹھیک کہہ رہے ہیں', 'perhaps you are right']],
+      grammar: { title: 'Softening what you say', explain: [
+        'Elders expect gentle disagreement. Start with mere khayal mein (in my opinion) or shayad (perhaps), and add ji to show respect: ji, lekin ...',
+        'Ittefaq karna is to agree: main aap se ittefaq karta hoon. To disagree softly: main pori tarah ittefaq nahin karta, I do not fully agree.'],
+        examples: [['Mere khayal mein yeh behtar hai', 'میرے خیال میں یہ بہتر ہے', 'In my opinion this is better'], ['Main aap se ittefaq karta hoon', 'میں آپ سے اتفاق کرتا ہوں', 'I agree with you'], ['Ji, lekin ek baat aur bhi hai', 'جی، لیکن ایک بات اور بھی ہے', 'Yes, but there is one more thing'], ['Yeh mehnga nahin balke sasta hai', 'یہ مہنگا نہیں بلکہ سستا ہے', 'This is not expensive; rather, it is cheap']] },
+      phrases: [['aap-ki-raaye', 'Aap ki kya raaye hai?', 'آپ کی کیا رائے ہے؟', 'What is your opinion?'], ['baat-theek', 'Aap ki baat theek hai', 'آپ کی بات ٹھیک ہے', 'You have a point'], ['main-samjha', 'Main samajhta hoon, lekin', 'میں سمجھتا ہوں، لیکن', 'I understand, but'], ['dono-taraf', 'Dono taraf se sochiye', 'دونوں طرف سے سوچیے', 'Think about it from both sides']],
+      talk: { title: "Which school?", lines: [
+        ["Abbu", "Mere khayal mein bachi ko qareeb wale school mein daalo.", "میرے خیال میں بچی کو قریب والے اسکول میں ڈالو۔", "In my opinion, put the girl in the nearby school."],
+        ["You", "Ji, aap ki baat theek hai. Lekin doosra school parhai mein behtar hai.", "جی، آپ کی بات ٹھیک ہے۔ لیکن دوسرا اسکول پڑھائی میں بہتر ہے۔", "Yes, you have a point. But the other school is better for studies."],
+        ["Abbu", "Magar woh door hai. Roz aana jaana mushkil hoga.", "مگر وہ دور ہے۔ روز آنا جانا مشکل ہوگا۔", "But it is far. Going back and forth every day will be hard."],
+        ["You", "Sach hai. Lekin wahan school ki bus aati hai.", "سچ ہے۔ لیکن وہاں اسکول کی بس آتی ہے۔", "True. But a school bus goes there."],
+        ["Abbu", "Achha? Yeh to mujhe pata nahin tha.", "اچھا؟ یہ تو مجھے پتا نہیں تھا۔", "Really? I did not know that."],
+        ["You", "Ji. Phir bhi aap ki raaye ahem hai. Itwaar ko dono school dekh aate hain?", "جی۔ پھر بھی آپ کی رائے اہم ہے۔ اتوار کو دونوں اسکول دیکھ آتے ہیں؟", "Yes. Still, your opinion matters. Shall we go and see both schools on Sunday?"],
+        ["Abbu", "Theek hai. Dekh kar faisla karenge.", "ٹھیک ہے۔ دیکھ کر فیصلہ کریں گے۔", "All right. We will decide after seeing them."]] } },
+    { id: 'l5-formal', name: 'Formal and respectful speech',
+      words: [['tashreef', 'tashreef laaiye', 'تشریف لائیے', 'please come (very polite)'], ['farmaana', 'farmaana', 'فرمانا', 'to say (of a respected person)'], ['janab', 'janab', 'جناب', 'sir'], ['mohtarma', 'mohtarma', 'محترمہ', 'madam'], ['guzarish', 'guzarish', 'گزارش', 'humble request'], ['shukr-guzar', 'shukr guzar', 'شکر گزار', 'grateful'], ['izzat', 'izzat', 'عزت', 'honour, respect'], ['ji', 'ji', 'جی', 'a respectful word added to names']],
+      grammar: { title: 'Talking up, talking down', explain: [
+        'Formal Urdu raises the other person and lowers yourself. For their actions use honoured verbs: aap ne farmaya (you said), tashreef rakhiye (please be seated). For your own, plain ones: main ne arz kiya (I humbly said).',
+        'Add ji after names and titles to show respect: Abbu ji, Khala ji, Doctor sahib.'],
+        examples: [['Tashreef rakhiye', 'تشریف رکھیے', 'Please be seated'], ['Aap ne bilkul theek farmaya', 'آپ نے بالکل ٹھیک فرمایا', 'You said exactly the right thing'], ['Meri aap se guzarish hai', 'میری آپ سے گزارش ہے', 'I have a humble request of you'], ['Main aap ka shukr guzar hoon', 'میں آپ کا شکر گزار ہوں', 'I am grateful to you']] },
+      phrases: [['bari-meherbani', 'Aap ki bari meherbani', 'آپ کی بڑی مہربانی', 'That is very kind of you'], ['izzat-afzai', 'Yeh mere liye izzat ki baat hai', 'یہ میرے لیے عزت کی بات ہے', 'It is an honour for me'], ['zehmat', 'Zehmat ke liye maafi', 'زحمت کے لیے معافی', 'Sorry for the trouble'], ['khidmat', 'Koi khidmat ho to batayein', 'کوئی خدمت ہو تو بتائیں', 'Let me know if I can do anything for you']],
+      talk: { title: "A respected guest", lines: [
+        ["You", "Assalam-o-alaikum, Maulvi sahib. Tashreef laaiye.", "السلام علیکم، مولوی صاحب۔ تشریف لائیے۔", "Hello, sir. Please come in."],
+        ["Guest", "Wa alaikum assalam. Zehmat ke liye maafi.", "وعلیکم السلام۔ زحمت کے لیے معافی۔", "Hello. Sorry for the trouble."],
+        ["You", "Bilkul nahin. Yeh hamare liye izzat ki baat hai. Tashreef rakhiye.", "بالکل نہیں۔ یہ ہمارے لیے عزت کی بات ہے۔ تشریف رکھیے۔", "Not at all. It is an honour for us. Please be seated."],
+        ["Guest", "Aap ki bari meherbani. Ghar mein sab khairiyat se hain?", "آپ کی بڑی مہربانی۔ گھر میں سب خیریت سے ہیں؟", "You are very kind. Is everyone at home well?"],
+        ["You", "Alhamdulillah. Chai ya thanda, kya pasand farmaenge?", "الحمدللہ۔ چائے یا ٹھنڈا، کیا پسند فرمائیں گے؟", "Yes, thank God. Tea or something cold, what would you like?"],
+        ["Guest", "Bas chai, shukriya. Zyada takalluf na kijiye.", "بس چائے، شکریہ۔ زیادہ تکلف نہ کیجیے۔", "Just tea, thank you. Please do not go to any trouble."],
+        ["You", "Koi takalluf nahin. Abhi haazir karta hoon.", "کوئی تکلف نہیں۔ ابھی حاضر کرتا ہوں۔", "It is no trouble. I will bring it right away."]] } },
+    { id: 'l5-idioms', name: 'Idioms and proverbs',
+      words: [['muhavara', 'muhavara', 'محاورہ', 'idiom'], ['kahawat', 'kahawat', 'کہاوت', 'proverb'], ['naak', 'naak', 'ناک', 'nose'], ['dil', 'dil', 'دل', 'heart'], ['aankhon', 'aankhon par', 'آنکھوں پر', 'on the eyes (gladly)'], ['sabr', 'sabr', 'صبر', 'patience']],
+      grammar: { title: 'Idioms you will hear at home', explain: [
+        'Idioms often use the body. Sar aankhon par (on my head and eyes) means "with pleasure, gladly". Dil lagana (to attach the heart) means to put your heart into something. Naak kat jaana (the nose is cut) means losing face.',
+        'Proverbs are used to make a point gently, especially by elders. Learn to recognise them first; using them comes later.'],
+        examples: [['Sar aankhon par', 'سر آنکھوں پر', 'Gladly, with pleasure'], ['Dil laga kar parho', 'دل لگا کر پڑھو', 'Study with your whole heart'], ['Ek aur ek gyarah', 'ایک اور ایک گیارہ', 'One and one make eleven: together we are stronger'], ['Sabr ka phal meetha hota hai', 'صبر کا پھل میٹھا ہوتا ہے', 'The fruit of patience is sweet']] },
+      phrases: [['aankh-ka-tara', 'Aankh ka tara', 'آنکھ کا تارا', 'The apple of my eye'], ['naak-mein-dam', 'Naak mein dam kar diya', 'ناک میں دم کر دیا', 'Drove me up the wall'], ['ghar-ki-murghi', 'Ghar ki murghi daal barabar', 'گھر کی مرغی دال برابر', 'What you have at home is taken for granted'], ['jaisi-karni', 'Jaisi karni waisi bharni', 'جیسی کرنی ویسی بھرنی', 'As you sow, so shall you reap']],
+      talk: { title: "Nani's advice", lines: [
+        ["Nani", "Urdu seekhna mushkil lag raha hai?", "اردو سیکھنا مشکل لگ رہا ہے؟", "Does learning Urdu feel hard?"],
+        ["You", "Ji, kabhi kabhi. Lafz yaad hi nahin rehte.", "جی، کبھی کبھی۔ لفظ یاد ہی نہیں رہتے۔", "Yes, sometimes. The words just do not stick."],
+        ["Nani", "Beta, sabr ka phal meetha hota hai.", "بیٹا، صبر کا پھل میٹھا ہوتا ہے۔", "Son, the fruit of patience is sweet."],
+        ["You", "Woh to hai. Lekin itna waqt lagta hai!", "وہ تو ہے۔ لیکن اتنا وقت لگتا ہے!", "That is true. But it takes so long!"],
+        ["Nani", "Tumhare Nana ne bhi angrezi aise hi seekhi thi. Roz thodi thodi.", "تمہارے نانا نے بھی انگریزی ایسے ہی سیکھی تھی۔ روز تھوڑی تھوڑی۔", "Your Nana learned English the same way. A little every day."],
+        ["You", "Sach mein? Mujhe to pata hi nahin tha!", "سچ میں؟ مجھے تو پتا ہی نہیں تھا!", "Really? I had no idea!"],
+        ["Nani", "Haan. Dil laga kar seekho, baqi Allah par chhod do.", "ہاں۔ دل لگا کر سیکھو، باقی اللہ پر چھوڑ دو۔", "Yes. Put your heart into it, and leave the rest to Allah."],
+        ["You", "Sar aankhon par, Nani!", "سر آنکھوں پر، نانی!", "Gladly, Nani!"]] } },
+    { id: 'l5-news', name: 'News and current events',
+      words: [['akhbaar', 'akhbaar', 'اخبار', 'newspaper'], ['hukoomat', 'hukoomat', 'حکومت', 'government'], ['intikhaab', 'intikhaab', 'انتخاب', 'election'], ['mehngaai', 'mehngaai', 'مہنگائی', 'rising prices, inflation'], ['sailaab', 'sailaab', 'سیلاب', 'flood'], ['mulk', 'mulk', 'ملک', 'country'], ['awaam', 'awaam', 'عوام', 'the public'], ['waqia', 'waqia', 'واقعہ', 'incident, event']],
+      grammar: { title: 'The passive: it was done', explain: [
+        'News often says what was done without saying who did it. Use the past form of the verb with jaana: faisla kiya gaya, a decision was made; elaan kiya gaya, it was announced.',
+        'Kaha jaata hai ke ... means "it is said that ...", a common way to report something without taking a side.'],
+        examples: [['Naya qanoon manzoor kiya gaya', 'نیا قانون منظور کیا گیا', 'A new law was approved'], ['Kaha jaata hai ke mehngaai barh rahi hai', 'کہا جاتا ہے کہ مہنگائی بڑھ رہی ہے', 'It is said that prices are rising'], ['Sailaab ki wajah se sarkein band ki gayin', 'سیلاب کی وجہ سے سڑکیں بند کی گئیں', 'Roads were closed because of the flood']] },
+      phrases: [['taaza-khabar', 'Taaza khabar kya hai?', 'تازہ خبر کیا ہے؟', 'What is the latest news?'], ['mehngaai-bohat', 'Mehngaai bohat barh gayi hai', 'مہنگائی بہت بڑھ گئی ہے', 'Prices have gone up a lot'], ['allah-reham', 'Allah reham kare', 'اللہ رحم کرے', 'May Allah have mercy (on hearing bad news)']],
+      talk: { title: "News from back home", lines: [
+        ["Chacha", "Tum ne suna? Wahan bohat barish hui hai.", "تم نے سنا؟ وہاں بہت بارش ہوئی ہے۔", "Did you hear? There has been a lot of rain there."],
+        ["You", "Ji, akhbaar mein parha. Kaha ja raha hai ke sailaab aa sakta hai.", "جی، اخبار میں پڑھا۔ کہا جا رہا ہے کہ سیلاب آ سکتا ہے۔", "Yes, I read it in the paper. They say a flood could come."],
+        ["Chacha", "Allah reham kare. Ghar wale theek hain?", "اللہ رحم کرے۔ گھر والے ٹھیک ہیں؟", "May Allah have mercy. Is the family all right?"],
+        ["You", "Ji, sab khairiyat se hain. Main roz phone karta hoon.", "جی، سب خیریت سے ہیں۔ میں روز فون کرتا ہوں۔", "Yes, everyone is safe. I call every day."],
+        ["Chacha", "Un ki gali mein paani to nahin aaya?", "ان کی گلی میں پانی تو نہیں آیا؟", "Water has not come into their street, has it?"],
+        ["You", "Thoda sa aaya tha, lekin ab utar gaya hai.", "تھوڑا سا آیا تھا، لیکن اب اتر گیا ہے۔", "A little did, but it has gone down now."],
+        ["Chacha", "Shukr hai. Agar kisi cheez ki zaroorat ho to batana.", "شکر ہے۔ اگر کسی چیز کی ضرورت ہو تو بتانا۔", "Thank God. If they need anything, let me know."]] } },
+    { id: 'l5-blessings', name: 'Blessings and everyday faith',
+      words: [['inshallah', 'inshallah', 'ان شاءاللہ', 'if Allah wills'], ['mashallah', 'mashallah', 'ماشاءاللہ', 'what Allah has willed (admiring something)'], ['alhamdulillah', 'alhamdulillah', 'الحمدللہ', 'praise be to Allah'], ['subhanallah', 'subhanallah', 'سبحان اللہ', 'glory be to Allah'], ['jazakallah', 'jazakallah', 'جزاک اللہ', 'may Allah reward you (thank you)'], ['dua', 'dua', 'دعا', 'prayer, supplication'], ['barkat', 'barkat', 'برکت', 'blessing, abundance']],
+      grammar: { title: 'When to say which', explain: [
+        'Inshallah goes with plans: kal milenge, inshallah. Mashallah goes with praise, so admiration does not sound like envy: mashallah, bohat pyaari bachi hai. Alhamdulillah answers "how are you?" and good news.',
+        'A dua for someone uses the wishing form of the verb: Allah aap ko lambi umar de, may Allah give you a long life.'],
+        examples: [['Kal milenge, inshallah', 'کل ملیں گے، ان شاءاللہ', 'See you tomorrow, if Allah wills'], ['Alhamdulillah, sab theek hai', 'الحمدللہ، سب ٹھیک ہے', 'Praise be to Allah, all is well'], ['Allah aap ko lambi umar de', 'اللہ آپ کو لمبی عمر دے', 'May Allah give you a long life']] },
+      phrases: [['jazakallah-khair', 'Jazakallah khair', 'جزاک اللہ خیر', 'May Allah reward you with good'], ['dua-mein-yaad', 'Dua mein yaad rakhiye', 'دعا میں یاد رکھیے', 'Remember me in your prayers'], ['allah-barkat', 'Allah barkat de', 'اللہ برکت دے', 'May Allah bless it'], ['allah-ki-marzi', 'Allah ki marzi', 'اللہ کی مرضی', 'As Allah wills']],
+      talk: { title: "Good news", lines: [
+        ["You", "Ammi, aap ke liye ek khabar hai!", "امی، آپ کے لیے ایک خبر ہے!", "Mom, I have some news for you!"],
+        ["Ammi", "Khair to hai? Kya hua?", "خیر تو ہے؟ کیا ہوا؟", "Is everything all right? What happened?"],
+        ["You", "Mujhe nayi naukri mil gayi!", "مجھے نئی نوکری مل گئی!", "I got a new job!"],
+        ["Ammi", "Alhamdulillah! Mashallah, bohat mubarak ho!", "الحمدللہ! ماشاءاللہ، بہت مبارک ہو!", "Praise be to Allah! How wonderful, congratulations!"],
+        ["You", "Shukriya, Ammi. Aap ki duaon ki wajah se.", "شکریہ، امی۔ آپ کی دعاؤں کی وجہ سے۔", "Thank you, Mom. It is because of your prayers."],
+        ["Ammi", "Kab se shuru hai?", "کب سے شروع ہے؟", "When does it start?"],
+        ["You", "Agle mahine se, inshallah.", "اگلے مہینے سے، ان شاءاللہ۔", "From next month, if Allah wills."],
+        ["Ammi", "Allah barkat de, beta. Aur kamyabi de.", "اللہ برکت دے، بیٹا۔ اور کامیابی دے۔", "May Allah bless it, son. And give you success."]] } },
+    { id: 'l5-story', name: 'Telling a longer story',
+      words: [['pehle', 'pehle', 'پہلے', 'first, before'], ['phir', 'phir', 'پھر', 'then'], ['us-ke-baad', 'us ke baad', 'اس کے بعد', 'after that'], ['achanak', 'achanak', 'اچانک', 'suddenly'], ['aakhir-kaar', 'aakhir kaar', 'آخر کار', 'in the end'], ['jab-ke', 'jab ke', 'جبکہ', 'whereas, while'], ['isi-liye', 'isi liye', 'اسی لیے', "that's why"]],
+      grammar: { title: 'Was doing, used to do', explain: [
+        'For a scene in the past, use the -ing form with tha: main gaari chala raha tha, I was driving. For habits in the past, use -ta tha: bachpan mein hum har garmi Pakistan jaate the, as children we used to go to Pakistan every summer.',
+        'Link the steps of a story with pehle, phir, us ke baad and aakhir kaar.'],
+        examples: [['Main ghar ja raha tha ke achanak barish shuru ho gayi', 'میں گھر جا رہا تھا کہ اچانک بارش شروع ہو گئی', 'I was going home when suddenly it started raining'], ['Bachpan mein hum har garmi Pakistan jaate the', 'بچپن میں ہم ہر گرمی پاکستان جاتے تھے', 'As children we used to go to Pakistan every summer'], ['Aakhir kaar hum waqt par pahunch gaye', 'آخر کار ہم وقت پر پہنچ گئے', 'In the end we arrived on time']] },
+      phrases: [['suniye-kya-hua', 'Suniye kya hua', 'سنیے کیا ہوا', 'Listen to what happened'], ['phir-kya-hua', 'Phir kya hua?', 'پھر کیا ہوا؟', 'Then what happened?'], ['yaad-hai', 'Aap ko yaad hai?', 'آپ کو یاد ہے؟', 'Do you remember?']],
+      talk: { title: 'The airport story', lines: [['You', 'Suniye kya hua! Hum airport ja rahe the ke achanak gaari ruk gayi.', 'سنیے کیا ہوا! ہم ایئرپورٹ جا رہے تھے کہ اچانک گاڑی رک گئی۔', 'Listen to what happened! We were going to the airport when suddenly the car stopped.'], ['Khala', 'Ya Allah! Phir kya hua?', 'یا اللہ! پھر کیا ہوا؟', 'Oh my God! Then what happened?'],
+        ['You', 'Pehle main ne gaari check ki, phir taxi bulai.', 'پہلے میں نے گاڑی چیک کی، پھر ٹیکسی بلائی۔', 'First I checked the car, then I called a taxi.'], ['Khala', 'Flight mil gayi?', 'فلائٹ مل گئی؟', 'Did you make the flight?'], ['You', 'Aakhir kaar, haan! Bilkul aakhri minute par.', 'آخر کار، ہاں! بالکل آخری منٹ پر۔', 'In the end, yes! At the very last minute.']] } }
+  ]
+};

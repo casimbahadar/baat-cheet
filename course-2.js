@@ -1,0 +1,61 @@
+// Level 2, Elementary: your day. Everyday verbs, time, places, shopping, and "right now".
+export const LEVEL_2 = {
+  id: 'L2', name: 'Level 2: Elementary', goal: 'Talk about your day, times and places, shop, and say what is happening now.',
+  units: [
+    { id: 'l2-verbs', name: 'Everyday verbs',
+      words: [['sona', 'sona', 'سونا', 'to sleep'], ['uthna', 'uthna', 'اٹھنا', 'to get up'], ['khana-v', 'khana', 'کھانا', 'to eat'], ['peena', 'peena', 'پینا', 'to drink'], ['jaana', 'jaana', 'جانا', 'to go'], ['aana', 'aana', 'آنا', 'to come'],
+        ['karna', 'karna', 'کرنا', 'to do'], ['dekhna', 'dekhna', 'دیکھنا', 'to see, to watch'], ['sunna', 'sunna', 'سننا', 'to hear, to listen'], ['bolna', 'bolna', 'بولنا', 'to speak'], ['parhna', 'parhna', 'پڑھنا', 'to read, to study'], ['likhna', 'likhna', 'لکھنا', 'to write'], ['kaam', 'kaam', 'کام', 'work']],
+      grammar: { title: 'What you usually do: karta hoon', explain: [
+        'Take the verb, drop -na, and add -ta (for a man), -ti (for a woman) or -te (for many, or respect), then hoon, hai or hain. Karna becomes karta hoon: I (a man) do.',
+        'Main roz kaam karta hoon: I work every day. A woman says main kaam karti hoon. With aap: aap kya karte hain?'],
+        examples: [['Main subah chai peeta hoon', 'میں صبح چائے پیتا ہوں', 'I drink tea in the morning'], ['Ammi Urdu bolti hain', 'امی اردو بولتی ہیں', 'Mom speaks Urdu'], ['Aap kya kaam karte hain?', 'آپ کیا کام کرتے ہیں؟', 'What work do you do?']] },
+      phrases: [['roz-kaam', 'Main roz kaam karta hoon', 'میں روز کام کرتا ہوں', 'I work every day'], ['jaldi-uth', 'Main jaldi uthta hoon', 'میں جلدی اٹھتا ہوں', 'I get up early'], ['kya-karte', 'Aap kya kaam karte hain?', 'آپ کیا کام کرتے ہیں؟', 'What work do you do?'],
+        ['computer', 'Main computer par kaam karta hoon', 'میں کمپیوٹر پر کام کرتا ہوں', 'I work on computers'], ['urdu-seekh', 'Main Urdu seekhta hoon', 'میں اردو سیکھتا ہوں', 'I study Urdu']],
+      talk: { title: 'What do you do?', lines: [['Taya', 'Beta, aap kya kaam karte hain?', 'بیٹا، آپ کیا کام کرتے ہیں؟', 'Son, what work do you do?'], ['You', 'Main computer par kaam karta hoon.', 'میں کمپیوٹر پر کام کرتا ہوں۔', 'I work on computers.'],
+        ['Taya', 'Achha! Roz daftar jaate ho?', 'اچھا! روز دفتر جاتے ہو؟', 'I see! Do you go to the office every day?'], ['You', 'Nahin, main ghar se kaam karta hoon.', 'نہیں، میں گھر سے کام کرتا ہوں۔', 'No, I work from home.']] } },
+    { id: 'l2-time', name: 'Time and days',
+      words: [['aaj', 'aaj', 'آج', 'today'], ['kal', 'kal', 'کل', 'yesterday, or tomorrow'], ['parson', 'parson', 'پرسوں', 'the day before yesterday, or the day after tomorrow'], ['subah', 'subah', 'صبح', 'morning'], ['dopahar', 'dopahar', 'دوپہر', 'afternoon'], ['shaam', 'shaam', 'شام', 'evening'], ['raat', 'raat', 'رات', 'night'],
+        ['peer', 'peer', 'پیر', 'Monday'], ['mangal', 'mangal', 'منگل', 'Tuesday'], ['budh', 'budh', 'بدھ', 'Wednesday'], ['jumeraat', 'jumeraat', 'جمعرات', 'Thursday'], ['juma', 'juma', 'جمعہ', 'Friday'], ['hafta', 'hafta', 'ہفتہ', 'Saturday; also "a week"'], ['itwaar', 'itwaar', 'اتوار', 'Sunday'], ['ghanta', 'ghanta', 'گھنٹہ', 'hour'], ['minute', 'minute', 'منٹ', 'minute']],
+      grammar: { title: 'Kal: yesterday or tomorrow', explain: [
+        'Kal means both yesterday and tomorrow; the verb tells you which. Kal aaunga is "I will come tomorrow"; kal aaya tha is "I came yesterday".',
+        'For clock time use baje: teen baje (at three o\'clock), saadhe teen baje (at half past three).'],
+        examples: [['Kal milte hain', 'کل ملتے ہیں', 'See you tomorrow'], ['Main aath baje uthta hoon', 'میں آٹھ بجے اٹھتا ہوں', 'I get up at eight'], ['Juma ko masjid jaate hain', 'جمعہ کو مسجد جاتے ہیں', 'We go to the mosque on Friday']] },
+      phrases: [['kitne-baje', 'Kitne baje aana hai?', 'کتنے بجے آنا ہے؟', 'What time should I come?'], ['saat-baje', 'Shaam saat baje', 'شام سات بجے', 'Seven in the evening'], ['kal-milte', 'Kal milte hain', 'کل ملتے ہیں', 'See you tomorrow'], ['aaj-kya', 'Aaj kya din hai?', 'آج کیا دن ہے؟', 'What day is it today?'], ['ek-ghanta', 'Ek ghante mein', 'ایک گھنٹے میں', 'In an hour']],
+      talk: { title: 'Planning a visit', lines: [['Phuppo', 'Itwaar ko hamare ghar aao!', 'اتوار کو ہمارے گھر آؤ!', 'Come to our house on Sunday!'], ['You', 'Zaroor. Kitne baje aana hai?', 'ضرور۔ کتنے بجے آنا ہے؟', 'Of course. What time should we come?'],
+        ['Phuppo', 'Dopahar do baje. Khana saath khaenge.', 'دوپہر دو بجے۔ کھانا ساتھ کھائیں گے۔', 'At two in the afternoon. We will eat together.'], ['You', 'Theek hai, Itwaar ko do baje milte hain.', 'ٹھیک ہے، اتوار کو دو بجے ملتے ہیں۔', 'All right, see you Sunday at two.']] } },
+    { id: 'l2-places', name: 'Places and directions',
+      words: [['masjid', 'masjid', 'مسجد', 'mosque'], ['dukaan', 'dukaan', 'دکان', 'shop'], ['bazaar', 'bazaar', 'بازار', 'market'], ['haspataal', 'haspataal', 'ہسپتال', 'hospital'], ['school', 'school', 'اسکول', 'school'], ['sarak', 'sarak', 'سڑک', 'road, street'],
+        ['daayen', 'daayen', 'دائیں', 'right'], ['baayen', 'baayen', 'بائیں', 'left'], ['seedha', 'seedha', 'سیدھا', 'straight'], ['qareeb', 'qareeb', 'قریب', 'near'], ['door', 'door', 'دور', 'far'], ['yahan', 'yahan', 'یہاں', 'here'], ['wahan', 'wahan', 'وہاں', 'there']],
+      grammar: { title: 'In, on, from: words that come after', explain: [
+        'Urdu puts these little words after the noun: ghar mein (in the house), mez par (on the table), dukaan se (from the shop), masjid tak (up to the mosque), ghar ke paas (near the house).',
+        'Before these words, a noun ending in -a often changes to -e: kamra becomes kamre mein (in the room).'],
+        examples: [['Woh kamre mein hai', 'وہ کمرے میں ہے', 'He is in the room'], ['Dukaan ghar ke paas hai', 'دکان گھر کے پاس ہے', 'The shop is near the house'], ['Main masjid se aa raha hoon', 'میں مسجد سے آ رہا ہوں', 'I am coming from the mosque']] },
+      phrases: [['kahan-hai', 'Masjid kahan hai?', 'مسجد کہاں ہے؟', 'Where is the mosque?'], ['seedha-jayen', 'Seedha jaayen', 'سیدھا جائیں', 'Go straight'], ['daayen-mudein', 'Daayen mudein', 'دائیں مڑیں', 'Turn right'], ['baayen-mudein', 'Baayen mudein', 'بائیں مڑیں', 'Turn left'], ['qareeb-hai', 'Kya yeh qareeb hai?', 'کیا یہ قریب ہے؟', 'Is it near?']],
+      talk: { title: 'Asking the way', lines: [['You', 'Maaf kijiye, bazaar kahan hai?', 'معاف کیجیے، بازار کہاں ہے؟', 'Excuse me, where is the market?'], ['Uncle', 'Seedha jaayen, phir baayen mudein.', 'سیدھا جائیں، پھر بائیں مڑیں۔', 'Go straight, then turn left.'],
+        ['You', 'Kya yeh qareeb hai?', 'کیا یہ قریب ہے؟', 'Is it near?'], ['Uncle', 'Jee, paanch minute ka raasta hai.', 'جی، پانچ منٹ کا راستہ ہے۔', 'Yes, it is a five-minute walk.'], ['You', 'Bohat shukriya!', 'بہت شکریہ!', 'Thank you very much!']] } },
+    { id: 'l2-shop', name: 'Shopping and money',
+      words: [['paise', 'paise', 'پیسے', 'money'], ['rupay', 'rupay', 'روپے', 'rupees'], ['mehnga', 'mehnga', 'مہنگا', 'expensive'], ['sasta', 'sasta', 'سستا', 'cheap'], ['lena', 'lena', 'لینا', 'to take, to buy'], ['dena', 'dena', 'دینا', 'to give'], ['chahiye', 'chahiye', 'چاہیے', 'is needed, want'], ['kapre', 'kapre', 'کپڑے', 'clothes'], ['tohfa', 'tohfa', 'تحفہ', 'gift']],
+      grammar: { title: 'Chahiye: I need, I want', explain: [
+        'Like feelings, needs use mujhe: mujhe ek kilo chawal chahiye (to me one kilo rice is needed). The thing comes before chahiye.',
+        'Ask "how much?" with kitne ka (for a masculine thing) or kitne ki (feminine): yeh kitne ka hai?'],
+        examples: [['Mujhe yeh chahiye', 'مجھے یہ چاہیے', 'I want this'], ['Yeh kitne ka hai?', 'یہ کتنے کا ہے؟', 'How much is this?'], ['Yeh bohat mehnga hai', 'یہ بہت مہنگا ہے', 'This is very expensive']] },
+      phrases: [['kitne-ka', 'Yeh kitne ka hai?', 'یہ کتنے کا ہے؟', 'How much is this?'], ['mehnga-hai', 'Bohat mehnga hai', 'بہت مہنگا ہے', 'It is very expensive'], ['kam-karein', 'Thoda kam karein', 'تھوڑا کم کریں', 'Please lower the price a little'], ['yeh-chahiye', 'Mujhe yeh chahiye', 'مجھے یہ چاہیے', 'I want this'], ['tohfa-hai', 'Yeh aap ke liye tohfa hai', 'یہ آپ کے لیے تحفہ ہے', 'This is a gift for you']],
+      talk: { title: 'At the market', lines: [['You', 'Yeh kapra kitne ka hai?', 'یہ کپڑا کتنے کا ہے؟', 'How much is this cloth?'], ['Shopkeeper', 'Do hazaar rupay.', 'دو ہزار روپے۔', 'Two thousand rupees.'],
+        ['You', 'Bohat mehnga hai! Thoda kam karein.', 'بہت مہنگا ہے! تھوڑا کم کریں۔', 'That is very expensive! Lower it a little.'], ['Shopkeeper', 'Achha, aap ke liye pandrah sau.', 'اچھا، آپ کے لیے پندرہ سو۔', 'All right, fifteen hundred for you.'], ['You', 'Theek hai, de dijiye.', 'ٹھیک ہے، دے دیجیے۔', 'Okay, I will take it.']] } },
+    { id: 'l2-now', name: 'Right now',
+      words: [['abhi', 'abhi', 'ابھی', 'now, right now'], ['raha', 'raha', 'رہا', '-ing (for a man)'], ['rahi', 'rahi', 'رہی', '-ing (for a woman)'], ['rahe', 'rahe', 'رہے', '-ing (for many, or respect)'], ['intezaar', 'intezaar', 'انتظار', 'waiting'], ['gaari', 'gaari', 'گاڑی', 'car'], ['phone', 'phone', 'فون', 'phone']],
+      grammar: { title: 'What is happening now: kar raha hoon', explain: [
+        'For something happening now, take the verb without -na, then raha (man), rahi (woman) or rahe (many or respect), then hoon, hai or hain: main kha raha hoon, I am eating.',
+        'Aap kya kar rahe hain? (What are you doing?) is one of the most useful questions on the phone.'],
+        examples: [['Main gaari chala raha hoon', 'میں گاڑی چلا رہا ہوں', 'I am driving'], ['Ammi khana bana rahi hain', 'امی کھانا بنا رہی ہیں', 'Mom is cooking'], ['Bachche so rahe hain', 'بچے سو رہے ہیں', 'The children are sleeping']] },
+      phrases: [['kya-kar-rahe', 'Aap kya kar rahe hain?', 'آپ کیا کر رہے ہیں؟', 'What are you doing?'], ['aa-raha', 'Main aa raha hoon', 'میں آ رہا ہوں', 'I am coming'], ['intezaar', 'Main intezaar kar raha hoon', 'میں انتظار کر رہا ہوں', 'I am waiting'], ['baad-mein', 'Main baad mein phone karta hoon', 'میں بعد میں فون کرتا ہوں', 'I will call later']],
+      talk: { title: 'A quick call', lines: [['Abbu', 'Kya kar rahe ho, beta?', 'کیا کر رہے ہو، بیٹا؟', 'What are you doing, son?'], ['You', 'Abbu, main gaari chala raha hoon.', 'ابو، میں گاڑی چلا رہا ہوں۔', 'Dad, I am driving.'],
+        ['Abbu', 'Achha, baad mein baat karte hain.', 'اچھا، بعد میں بات کرتے ہیں۔', 'Okay, let us talk later.'], ['You', 'Jee, main ghar pahunch kar phone karta hoon.', 'جی، میں گھر پہنچ کر فون کرتا ہوں۔', 'Yes, I will call when I get home.']] } },
+    { id: 'l2-tens', name: 'Bigger numbers',
+      words: [['tees', 'tees', 'تیس', '30'], ['chaalees', 'chaalees', 'چالیس', '40'], ['pachaas', 'pachaas', 'پچاس', '50'], ['saath', 'saath', 'ساٹھ', '60'], ['sattar', 'sattar', 'ستر', '70'], ['assi', 'assi', 'اسی', '80'], ['nawway', 'nawway', 'نوے', '90'], ['sau', 'sau', 'سو', '100'], ['hazaar', 'hazaar', 'ہزار', '1,000'], ['lakh', 'lakh', 'لاکھ', '100,000']],
+      grammar: { title: 'Hundreds and thousands', explain: ['Big numbers join simply: do sau (200), paanch hazaar (5,000). Pakistan counts in lakhs: ek lakh is 100,000.', 'Each number from 21 to 99 has its own word (ikkees, baees ...). Learn the tens first, then add the ones you need often, such as your age.'],
+        examples: [['Teen sau rupay', 'تین سو روپے', '300 rupees'], ['Do hazaar', 'دو ہزار', '2,000'], ['Ek lakh', 'ایک لاکھ', '100,000']] },
+      phrases: [['umar', 'Aap ki umar kya hai?', 'آپ کی عمر کیا ہے؟', 'How old are you?'], ['saal', 'Main ... saal ka hoon', 'میں ... سال کا ہوں', 'I am ... years old']],
+      talk: { title: 'How old?', lines: [['Nana', 'Tumhari beti kitne saal ki hai?', 'تمہاری بیٹی کتنے سال کی ہے؟', 'How old is your daughter?'], ['You', 'Woh paanch saal ki hai.', 'وہ پانچ سال کی ہے۔', 'She is five.'], ['Nana', 'Mashallah! Aur tum?', 'ماشاءاللہ! اور تم؟', 'How lovely! And you?'], ['You', 'Main ... saal ka hoon.', 'میں ... سال کا ہوں۔', 'I am ... years old.']] } }
+  ]
+};
