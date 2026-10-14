@@ -134,6 +134,23 @@ try {
   }
   await page.screenshot({ path: join(out, 'listening.png') });
   check(await page.$('#listen-score') !== null, 'the listening practice did not finish');
+  // Progress backup: save here, load in a fresh copy (as when moving to the home-screen app).
+  await page.click('[data-tab="family"]');
+  const [pd] = await Promise.all([page.waitForEvent('download'), page.click('#progress-export')]);
+  const pfile = join(out, 'progress.json'); await pd.saveAs(pfile);
+  const mine = await state();
+  const ctx3 = await browser.newContext(); const p3 = await ctx3.newPage();
+  await p3.goto(`${base}/index.html`); await p3.waitForFunction(() => window.__bcReady);
+  await p3.click('[data-tab="family"]');
+  await p3.setInputFiles('#progress-import', pfile);
+  await p3.waitForFunction(() => window.__bcReady && document.querySelector('.masthead'));
+  const moved = await p3.evaluate(() => JSON.parse(localStorage.getItem('baatcheet')));
+  check(moved.quiz['l1-hello'] === mine.quiz['l1-hello'] && Object.keys(moved.cards).length === Object.keys(mine.cards).length && moved.custom.length === mine.custom.length, 'loading the progress file did not bring the progress across');
+  const badFile = join(out, 'bad.json'); await (await import('node:fs/promises')).writeFile(badFile, '{"kind":"other"}');
+  await p3.click('[data-tab="family"]');
+  await p3.setInputFiles('#progress-import', badFile);
+  await p3.waitForFunction(() => /not a Baat Cheet progress file/.test(document.getElementById('fam-status').textContent));
+  check(true, '');
   check(errors.length === 0, `page errors: ${errors.join('; ')}`);
   console.log(`checks passed: ${passed}, failed: ${fails.length}`); for (const f of fails) console.log(`FAIL ${f}`);
   await browser.close(); server.close(); process.exit(fails.length ? 1 : 0);

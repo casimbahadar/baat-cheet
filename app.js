@@ -424,10 +424,29 @@ function family(unitId = 'custom') {
       open(family(unitId)); $('fam-status').textContent = `Loaded ${Object.keys(incoming).length} recordings.`;
     } catch { status.textContent = 'That file is not a Baat Cheet family file.'; }
   };
+  // Loading progress replaces this copy's progress, after checking the file is one of ours.
+  const progressIn = el('input', { id: 'progress-import', type: 'file', accept: 'application/json,.json' });
+  progressIn.onchange = async () => {
+    try {
+      const f = JSON.parse(await progressIn.files[0].text());
+      const d = f?.data;
+      if (f?.kind !== 'baat-cheet-progress' || !d || typeof d.cards !== 'object' || typeof d.quiz !== 'object' || typeof d.edits !== 'object' || !Array.isArray(d.custom ?? [])) throw new Error('bad');
+      localStorage.setItem(KEY, JSON.stringify(d));
+      location.reload();
+    } catch { status.textContent = 'That file is not a Baat Cheet progress file. Nothing was changed.'; }
+  };
   return [el('h1', {}, 'Family'), el('p', { class: 'help' }, 'For a family member: record each line the way you say it at home, fix anything that is not how your family says it, and tick Checked. Recordings stay on this phone.'),
     el('p', { class: 'week' }, `${done} of ${ITEMS.length} lines checked by family.`), el('label', { class: 'field' }, 'Section', pick), addForm, el('h2', {}, u.name),
     ...(rows.length ? rows : [el('p', { class: 'help' }, 'Nothing here yet.')]), status,
-    el('h2', {}, 'Another phone'), exp, el('label', { class: 'field' }, 'Load a file', imp)];
+    el('h2', {}, 'Another phone'), exp, el('label', { class: 'field' }, 'Load a file', imp),
+    el('h2', {}, 'Your progress'),
+    el('p', { class: 'help' }, 'Lessons done, review dates, quiz scores, letters learned and your settings. Save a file to move them to another phone, or into the home-screen app, which keeps its own copy.'),
+    el('button', { id: 'progress-export', type: 'button', class: 'btn quiet', onclick: () => {
+      const a = el('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ kind: 'baat-cheet-progress', version: 2, data })], { type: 'application/json' })), download: 'baat-cheet-progress.json' });
+      document.body.append(a); a.click(); a.remove();
+      $('fam-status').textContent = 'Progress saved. Load it in the other copy of the app, here in Family.';
+    } }, 'Save my progress'),
+    el('label', { class: 'field' }, 'Load my progress', progressIn)];
 }
 
 // ---------- tabs ----------

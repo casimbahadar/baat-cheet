@@ -59,6 +59,8 @@ A few things to keep in mind:
 
 The microphone only works from that https address, not from a file or a local server.
 
+To put it on the home screen, open it in Safari, tap Share, then Add to Home Screen. It opens full screen from there. An iPhone keeps a home-screen app's data separate from Safari's, so to carry progress over: in Safari, Family, Save my progress (and Save a file for another phone, for family recordings); then in the home-screen app, Family, Load my progress and Load a file.
+
 ## What the app keeps
 
 The app keeps your progress (cards, review dates, quiz scores, letters learned), the family's fixes and ticks, and recordings. They are stored in the browser on that device, and nothing is sent anywhere.
